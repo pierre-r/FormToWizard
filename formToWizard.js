@@ -16,7 +16,7 @@
         var steps = $(element).find("fieldset");
         var actual = 0;
         var count = steps.size();
-        var submmitButtonName = "#" + options.submitButton;
+        var submmitButtonName = (options.submitButton) ? "#" + options.submitButton : this.find('[type=submit]');
         $(submmitButtonName).hide();
         this.addClass('form-wizard');
 

@@ -35,6 +35,17 @@ $("form").formToWizard({
 });
 ```
 
+Here is my original code, using : Gettext, Bootstrap, Smarty
+```javascript
+$("form").formToWizard({
+	prevClasses: 'btn btn-border',
+	nextClasses: 'btn btn-border',
+	strPrev: '< <{_("Retour")}>',
+	strNext: '<{_("Suivant")}> >',
+	strStep: '<{_("Étape")}>'
+});
+```
+
 
 TODO
 ==========================
