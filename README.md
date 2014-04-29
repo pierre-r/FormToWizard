@@ -1,7 +1,9 @@
 FormToWizard
 ==========================
 Turn plain webform into a powerful wizard with jQuery
+
 From Janko Jovanovic, thank you for this great plugin ! :)
+
 View his original plugin : http://www.jankoatwarpspeed.com/turn-any-webform-into-a-powerful-wizard-with-jquery-formtowizard-plugin/
 
 Usage
