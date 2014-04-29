@@ -39,9 +39,7 @@
                 e.preventDefault();
                 $("#step" + actual).hide();
                 $("#step" + (i)).show();
-                $(submmitButtonName).hide();
                 selectStep(i);
-                actual = i;
             });
 
             if (i == 0) {
@@ -69,7 +67,6 @@
                 e.preventDefault();
                 $("#" + stepName).hide();
                 $("#step" + (i - 1)).show();
-                $(submmitButtonName).hide();
                 selectStep(i - 1);
             });
         }
@@ -84,15 +81,18 @@
                 e.preventDefault();
                 $("#" + stepName).hide();
                 $("#step" + (i + 1)).show();
-                if (i + 2 == count)
-                    $(submmitButtonName).show();
                 selectStep(i + 1);
             });
         }
 
         function selectStep(i) {
+            actual = i;
             $("#steps li").removeClass("current");
             $("#stepDesc" + i).addClass("current");
+            $(submmitButtonName).hide();
+            if (i + 1 == count) {
+                $(submmitButtonName).show();
+            }
         }
 
     }
