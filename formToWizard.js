@@ -49,6 +49,7 @@
             else if (i == count - 1) {
                 $("#step" + i).hide();
                 createPrevButton(i);
+                createSubmitButton();
             }
             else {
                 $("#step" + i).hide();
@@ -83,6 +84,15 @@
                 $("#step" + (i + 1)).show();
                 selectStep(i + 1);
             });
+        }
+
+        function createSubmitButton() {
+            var stepName = "step" + (count - 1);
+            var nextClass = "wizard-next";
+            nextClass = (options.nextClasses) ? options.nextClasses + " " + nextClass : nextClass;
+            var submitHtml = $(submmitButtonName).addClass(nextClass);
+            $(submmitButtonName).remove();
+            $("#" + stepName + "commands").append(submitHtml);
         }
 
         function selectStep(i) {
