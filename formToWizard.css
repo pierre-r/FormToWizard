@@ -1,0 +1,12 @@
+#steps { list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
+#steps li,
+#steps li a{font-size:24px; float:left; padding:10px; color:#b0b1b3;}
+#steps li span {font-size:11px; display:block;}
+#steps li a:hover,
+#steps li.current,
+#steps li.current a { color:#000;}
+#steps li a:hover { text-decoration: none; }
+.wizard-prev { float: left; }
+.wizard-next { float: right; }
+.form-wizard { margin-top: 50px; }
+.form-wizard legend { display: none; }
